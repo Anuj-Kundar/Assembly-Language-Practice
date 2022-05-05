@@ -11,10 +11,11 @@ MOV DS,AX
 MOV SI, 0       ;index register for taking every value one by one
 MOV CX,COUNT
 MOV BL,N[SI]
-DEC CX AGAIN:
-INC SI ;increment the source index register
-CMP BL, N[SI] ; compare the value of BL and value in SI
-JNC NOSWAP ; Jump if carry flag is set to zero
+DEC CX 
+AGAIN:
+INC SI          ;increment the source index register
+CMP BL, N[SI]   ;compare the value of BL and value in SI
+JNC NOSWAP      ; Jump if carry flag is set to zero
 MOV BL,N[SI]
 NOSWAP:LOOP AGAIN
 MOV LARGEST, BL ; The largest value will be stored in bl register

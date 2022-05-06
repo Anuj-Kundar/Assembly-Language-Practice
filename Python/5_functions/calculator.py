@@ -1,7 +1,7 @@
 def Add(n1,n2):
     sum1 = n1 + n2
     return sum1
-def diff(n1,n2):
+def Diff(n1,n2):
     diff = n1 - n2
     return diff
 def mul(n1,n2):
@@ -19,7 +19,7 @@ if ch=='+':
     res=Add(int(x),int(y))
     print(res)
 elif ch=='-':
-    res=diff(int(x),int(y))
+    res=Diff(int(x),int(y))
     print(res)
 elif ch=='*':
     res=mul(int(x),int(y))
